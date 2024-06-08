@@ -12,9 +12,8 @@ body {
     padding: 0;
 }
 
-/* Estilos básicos para la barra de navegación */
 header nav {
-    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    background-color: #333; 
 }
 
 header nav ul {
@@ -30,15 +29,14 @@ header nav ul li {
 header nav ul li a {
     display: inline-block;
     padding: 10px 20px;
-    color: white; /* Cambia el color del texto según tu diseño */
+    color: white;
     text-decoration: none;
 }
 
 header nav ul li a:hover {
-    background-color: #555; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+    background-color: #555;
 }
 
-/* Media Query para dispositivos móviles */
 @media(max-width: 600px) {
     header nav ul li {
         display: flex;
@@ -60,12 +58,6 @@ main {
     padding: 20px;
 }
 
-section {
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 5px;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -74,13 +66,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header {
@@ -105,18 +90,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {
-    padding: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Estilos para el catálogo */
 .catalogo {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -153,27 +126,6 @@ footer {
     background-color: #555;
 }
 
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    text-align: center;
-}
-
 section {
     flex: 1;
 }
@@ -199,7 +151,6 @@ section {
     font-weight: bold;
 }
 
-/* Estilos para los productos */
 .producto {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -212,13 +163,12 @@ section {
     margin-bottom: 5px;
 }
 
-/* Estilos para los botones de agregar */
 .btn-agregar {
-    display: none; /* Ocultar los botones */
+    display: none; 
 }
 
 .producto:hover .btn-agregar {
-    display: inline-block; /* Mostrar botones al pasar el ratón */
+    display: inline-block; 
     background-color: #333;
     color: #fff;
     border: none;
@@ -227,9 +177,6 @@ section {
     cursor: pointer;
 }
 
-
-/* Estilos para los productos cuando se seleccionan */
 input[type="checkbox"].btn-agregar:checked + label {
     border: 2px solid green;
 }
-
