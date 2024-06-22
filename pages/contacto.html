@@ -3,12 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GraFiTTi</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="../assets/camisa.svg.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/camisa.svg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-    
+    <header>
+        <h1>GraFiTTi</h1>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-toggle">
+            <img src="../assets/menu.png" class="menu-toggle__icon" alt="Menú">
+        </label>
+
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="./catalago.html" class="menu__link">Catálogo</a></li>
+                <li class="menu__item"><a href="../pages/ofertas.html" class="menu__link">Ofertas</a></li>
+                <li class="menu__item"><a href="../pages/nosotros.html" class="menu__link">Sobre nosotros</a></li>
+                <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="../pages/carrito.html" class="menu__link">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-section">
+            <h2>Formulario de Contacto</h2>
+            <form action="grafitti@email.com" method="post" enctype="text/plain" class="contact-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar" class="btn-enviar">
+                <input type="reset" value="Limpiar" class="btn-limpiar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa • 👔</p>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

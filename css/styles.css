@@ -58,6 +58,12 @@ main {
     padding: 20px;
 }
 
+.row{
+    color: blue;
+    grid-area: center;
+    text-decoration: overline;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -169,7 +175,7 @@ section {
 
 .producto:hover .btn-agregar {
     display: inline-block; 
-    background-color: #333;
+    background-color: #33333391;
     color: #fff;
     border: none;
     padding: 5px 10px;
@@ -179,4 +185,114 @@ section {
 
 input[type="checkbox"].btn-agregar:checked + label {
     border: 2px solid green;
+}
+
+/*desde aca contacto*/
+
+.contacto-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 147, 32, 0.1);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+    background-color: #555;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*desde aca nosotros*/
+@media (max-width: 768px) {
+    .m {
+        flex-direction: column;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .menu-toggle:checked + .menu {
+        max-height: 400px; 
+    }
+}
+/*desde aca OFERTAS*/
+.offer-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.offer-card p {
+    color: #666;
+}
+
+.offer-card .btn {
+    background-color: #ff5f6d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.offer-card .btn:hover {
+    background-color: #e74c5a;
 }
