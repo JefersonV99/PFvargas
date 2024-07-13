@@ -33,39 +33,11 @@ header nav {
   background-color: #333;
 }
 
-header nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 header nav ul li {
   display: inline;
 }
 
-header nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  background-color: #555;
-}
-
-@media (max-width: 600px) {
-  header nav ul li {
-    display: flex;
-  }
-  header nav ul li a {
-    display: inline-flex;
-    padding: 10px;
-  }
-  #icono:checked ~ .header {
-    display: initial;
-  }
-}
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -74,7 +46,7 @@ main {
 }
 
 .row {
-  color: blue;
+  color: rgb(206, 130, 17);
   grid-area: center;
   text-decoration: overline;
 }

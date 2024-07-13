@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tienda de ropa urbana virtual">
+    <meta name="keywords" content="camisetas overzide, pantalones, online">
     <title>Ofertas - GraFiTTi</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/camisa.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
     <header>
         <h1>GraFiTTi</h1>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-toggle">
-            <img src="../assets/menu.png" class="menu-toggle__icon" alt="Menú">
-        </label>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a href="./catalago.html" class="menu__link">Catálogo</a></li>
-                <li class="menu__item"><a href="ofertas.html" class="menu__link">Ofertas</a></li>
-                <li class="menu__item"><a href="nosotros.html" class="menu__link">Sobre nosotros</a></li>
-                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
-                <li class="menu__item"><a href="carrito.html" class="menu__link">Carrito</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav menu__list">
+                    <li class="nav-item">
+                        <a href="catalago.html" class="nav-link">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="ofertas.html" class="nav-link">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="nav-link">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrito.html" class="nav-link">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -40,5 +54,6 @@
     <footer>
         <p>&copy; 2024 Tienda de Ropa • 👔</p>
     </footer>
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
